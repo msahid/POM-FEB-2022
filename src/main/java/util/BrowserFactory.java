@@ -12,7 +12,7 @@ public class BrowserFactory {
 	
 	public  static WebDriver init() {
 
-		System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 
 //		driver.manage().window().maximize();

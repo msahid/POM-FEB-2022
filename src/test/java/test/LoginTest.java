@@ -25,8 +25,16 @@ public class LoginTest {
 		loginPage.insertPassword(password);
 		loginPage.clickSigninButton();
 		
+		
+		
 		DashboardPage dashboardPage = PageFactory.initElements(driver, DashboardPage.class);
 		dashboardPage.validateDashboardPage(dashboardValidationText);
+		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 		BrowserFactory.tearDown();
 	}
