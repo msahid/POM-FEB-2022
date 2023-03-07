@@ -29,5 +29,5 @@ public class DashboardPage {
 	public void clickAddCustomersButton() {
 		addCustomerElement.click();
 	}
-
+// no changes made here
 }

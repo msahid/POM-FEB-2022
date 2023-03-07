@@ -24,9 +24,17 @@ public class LoginTest {
 		loginPage.insertUserName(userName);
 		loginPage.insertPassword(password);
 		loginPage.clickSigninButton();
+		//update glitch 
+		// code update push to github
 		
 		DashboardPage dashboardPage = PageFactory.initElements(driver, DashboardPage.class);
 		dashboardPage.validateDashboardPage(dashboardValidationText);
+		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 		BrowserFactory.tearDown();
 	}
